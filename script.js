@@ -1,3 +1,1 @@
-alert('Aaaaa')
-
-// Create and name all the components required
+// import the font and store all colours as CSS variable
