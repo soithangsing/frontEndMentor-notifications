@@ -1,3 +1,23 @@
-h1 {
-    color: aqua;
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;800&display=swap');
+
+/* font-family: 'Plus Jakarta Sans', sans-serif; */
+
+:root {
+    /* Primary colours */
+    --primary-red: hsl(1, 90%, 64%);
+    --primary-blue: hsl(219, 85%, 26%);
+
+    /* Neutral colours */
+    --neutral-white: hsl(0, 0%, 100%);
+    --neutral-v-light-grayish-blue: hsl(210, 60%, 98%);
+    --neutral-light-grayish-blue-1: hsl(211, 68%, 94%);
+    --neutral-light-grayish-blue-2: hsl(205, 33%, 90%);
+    --neutral-grayish-blue: hsl(219, 14%, 63%);
+    --neutral-dark-grayish-blue: hsl(219, 12%, 42%);
+    --neutral-very-dark-blue: hsl(224, 21%, 14%);
+}
+
+body {
+    color: var(--primary-blue);
+    
 }
