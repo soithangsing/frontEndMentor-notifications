@@ -18,6 +18,54 @@
 }
 
 body {
-    color: var(--primary-blue);
-    
+    /* color: var(--primary-blue); */
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    padding: 80px;
+    background-color: var(--neutral-light-grayish-blue-2);   
+}
+
+p{ 
+    font-size: 16px;
+}
+
+.notification-page__top {
+    /* background-color: green; */
+    border-radius: 15px;
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.notification-page__header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.notification-page__option {
+    align-self: center;
+}
+
+.notification-page__container {
+    /* background-color: royalblue; */
+    border-radius: 15px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.notification-page {
+    display: flex;
+    border-radius: 15px;
+    border: 2px solid black;
+    flex-direction: column;
+    background-color: var(--neutral-white);
+}
+
+.notification {
+    background-color: var(--neutral-grayish-blue);
+    border-radius: 6px;
+    display: flex;
 }
