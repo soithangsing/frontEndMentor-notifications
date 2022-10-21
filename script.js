@@ -1,5 +1,7 @@
 // import the font and store all colours as CSS variable - done
 
-// import profile pictures and establish a css layout with breakpoints done import profile pictures and establish css layout, not yet done with breakpoints
+// import profile pictures and establish css layout  - done
 
 // establish dom element links 
+
+// make a mobile breakpoint and finish the UI
