@@ -34,13 +34,30 @@ p{
     display: flex;
     gap: 20px;
     justify-content: space-between;
-    padding: 20px;
+    padding: 20px 20px 0 20px;
 }
 
 .notification-page__header {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-end;
+    gap: 12px;
+    
+}
+
+.notification-header__text > h3 {
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 24px;
+    font-weight: 800;
+}
+
+.notification-header__counter {
+    background-color: var(--primary-blue);
+    color: white;
+    padding: 8px;
+    font-size: 14px;
+    border-radius: 6px;
 }
 
 .notification-page__option {
@@ -50,10 +67,10 @@ p{
 .notification-page__container {
     /* background-color: royalblue; */
     border-radius: 15px;
-    padding: 20px;
+    padding: 20px 20px 20px;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 8px;
 }
 
 .notification-page {
@@ -65,7 +82,27 @@ p{
 }
 
 .notification {
-    background-color: var(--neutral-grayish-blue);
+    background-color: var(--neutral-light-grayish-blue-1);
     border-radius: 6px;
     display: flex;
+    align-items: center;
+    padding: 12px;
+    gap: 20px
+}
+
+.notification > img {
+    width: 50px;
+    height: 50px;
+}
+
+/* Links in notification */
+.person_name { 
+    margin-right: 4px;
+    text-decoration: none;
+    color: black;
+    font-weight: 800; 
+}
+
+.person_name:hover {
+    color: var(--primary-blue);
 }
