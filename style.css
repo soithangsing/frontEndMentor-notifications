@@ -64,6 +64,11 @@ p{
     align-self: center;
 }
 
+.notification-page__option a {
+    text-decoration: none;
+    color: var(--neutral-dark-grayish-blue);
+}
+
 .notification-page__container {
     /* background-color: royalblue; */
     border-radius: 15px;
@@ -76,18 +81,35 @@ p{
 .notification-page {
     display: flex;
     border-radius: 15px;
-    border: 2px solid black;
+    /* border: 2px solid black; */
     flex-direction: column;
     background-color: var(--neutral-white);
 }
 
 .notification {
-    background-color: var(--neutral-light-grayish-blue-1);
     border-radius: 6px;
     display: flex;
-    align-items: center;
+    /* align-items: center; */
     padding: 12px;
     gap: 20px
+}
+.notification__text p {
+    margin-top: 4px;
+    margin-bottom: 4px;
+    color: var(--neutral-dark-grayish-blue);
+}
+
+.notification__time {
+    color: var(--neutral-dark-grayish-blue);
+    
+}
+
+.private_message {
+    margin-top: 8px;
+    background-color: white;
+    padding: 16px;
+    border: 2px solid var(--neutral-grayish-blue);
+    border-radius: 6px;
 }
 
 .notification > img {
@@ -105,4 +127,37 @@ p{
 
 .person_name:hover {
     color: var(--primary-blue);
+}
+
+.user_post {
+    text-decoration: none;
+    color: var(--neutral-dark-grayish-blue);
+    font-weight: 800;
+    margin-left: 4px;
+}
+
+.group_name {
+    text-decoration: none;
+    color:var(--primary-blue);
+    font-weight: 800;
+    margin-left: 2px;
+}
+
+.dot {
+    height: 8px;
+    width: 8px;
+    background-color: var(--primary-red);
+    border-radius: 50%;
+    display: inline-block;
+    margin-left: 9px;
+}
+
+.unread {
+    background-color: var(--neutral-v-light-grayish-blue);
+}
+
+/* To be used when selecting mark all as read */
+
+.hidden {
+    display: none;
 }
