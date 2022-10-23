@@ -6,6 +6,8 @@
 
 // make a mobile breakpoint and finish the UI
 
+// Make unread notifications clickable to update the notification counter and mark as read
+
 // Query Selectors
 
 const unreadNotifs = document.querySelectorAll('.unread');
@@ -17,6 +19,8 @@ let unreadNotifsArr = Array.from(unreadNotifs);
 const notificationCounter = document.querySelector('.notification-header__counter')
 
 const markAllasRead = document.querySelector('.mark-read');
+
+const unreadElements = document.getElementsByClassName('unread');
 
 // const spans = document.getElementsByTagName(span);
 // // End of Query Selectors
@@ -70,5 +74,29 @@ function readAll() {
    
 }
 
-markAllasRead.addEventListener('click', readAll)
+markAllasRead.addEventListener('click', readAll);
 
+for(let i = 0; i < unreadElements.length; i++) {
+    unreadElements[i].addEventListener('click', (e) => {
+        e.currentTarget.classList.remove('unread');
+
+        unreadNotifsArr.pop()
+
+        notificationCounter.textContent = unreadNotifsArr.length
+
+        if(unreadNotifsArr.length < 1) {
+            notificationCounter.classList.add('hidden');
+        }
+
+        const textParent = e.currentTarget.children[1]
+
+        const paragraphParent  = textParent.children[0];
+        
+        paragraphParent.childNodes.forEach(c=> {
+            if(c.tagName == 'SPAN') {
+                paragraphParent.removeChild(c);
+            }
+        });
+        
+    })
+}
