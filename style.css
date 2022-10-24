@@ -175,4 +175,8 @@ p{
     body{
         padding: 0;
     }
+
+    .notification-page {
+        box-shadow: none;
+    }
 }

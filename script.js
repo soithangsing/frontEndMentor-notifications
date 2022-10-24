@@ -98,5 +98,5 @@ for(let i = 0; i < unreadElements.length; i++) {
             }
         });
         
-    })
+    }, {once: true})
 }
