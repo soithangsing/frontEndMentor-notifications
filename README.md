@@ -32,6 +32,8 @@ I would like to take some time to refactor my code because as of now, I leave it
 
 I also want more projects to fiddle with the DOM and APIs as I believe they are integral to becoming a fully-fledged front-end developer. 
 
+After viewing the desktop solution I guess I could have centered the notification more in the middle with lesser width, as of now it stretches a lot. Will fix it down the road!
+
 ## Author
 
 - Website - [Soilianmang Thangsing](https://blissful-clarke-77b2ef.netlify.app/)
